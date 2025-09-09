@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PixelArt - Contacto</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">PixelArt</div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Sobre Nosotros</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="contact.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact container">
+      <h1>Contáctanos</h1>
+      <p>Escríbenos y arranquemos hoy mismo con tu proyecto.</p>
+
+      <div class="contact-grid">
+        <div class="contact-form">
+          <form id="contactForm" action="#" method="post">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+
+            <label for="correo">Correo</label>
+            <input id="correo" name="correo" type="email" placeholder="tu@correo.com" required />
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje..." required></textarea>
+
+            <button class="btn" type="submit">Enviar</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+        
+          <img src="img/logo.png" alt="Oficina PixelArt" />
+          <h3>Visítanos</h3>
+          <p>Ciudad de Guatemala • pixelart.gt@gmail.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 PixelArt. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Gracias. El formulario está listo — conecta con tu backend para guardar datos.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
